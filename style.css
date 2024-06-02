@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header {
+  background-color: rgba(129, 129, 129, 0.342);
+  height: 10vh;
+}
+
+
+
+header div h1 {
+  font-family: "Caveat", cursive;
+  font-weight: bold;
+    font-size: 50px;
+    transition: all .2s;
+}
+
+
+header div .heart {
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+}
+
+/* ICONOS */
+.iconos-redes {
+    margin-top: 8px;
+    color: var(--gris-letras);
+}
+
+.iconos-redes a {
+    margin: 0 5px;
+    color: var(--gris-letras);
+}
+
+.facebook:hover {
+    color: #3B5998;
+}
+
+.instagram:hover {
+    color: #DD2A7B;
+}
+
+.pinterest:hover {
+    color: #C8232C;
+}
+
+.twitter:hover {
+    color: #00ACEE;
+}
+
+/* Animacion de iconos */
+.icon {
+    display: inline-block;
+    font-size: 30px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.bi-instagram {
+    animation-delay: 0.5s;
+}
+
+.bi-pinterest {
+    animation-delay: 1s;
+}
+
+.bi-twitter {
+    animation-delay: 1.5s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 10vh;
+    object-fit: cover;
+}
+
+.text {
+    margin-top: 60px;
+}
+
+
+.image {
+    padding: 10px;
+    width: 100%;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 20px;
+    transition: all .2s;
+}
+
+.image img:hover {
+    transform: scale(1.1);
+}
+
+.container-cards {
+    flex-wrap: wrap;
+}
